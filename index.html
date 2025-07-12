@@ -22,18 +22,18 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <div class="flex items-center">
-          <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Aarush Tyagi</h1>
+          <h1 class="text-2xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Aarush Tyagi</h1>
         </div>
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2 sm:space-x-4">
           <button class="md:hidden p-2 rounded-lg hover:bg-gray-100" onclick="toggleMenu()" aria-label="Toggle menu">
             <i class="fas fa-bars text-gray-600"></i>
           </button>
-          <div id="mobile-menu" class="hidden md:flex md:items-center md:space-x-8">
-            <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">About</a>
-            <a href="#skills" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Skills</a>
-            <a href="#projects" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Projects</a>
-            <a href="#resume" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Resume</a>
-            <a href="#contact" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all">Contact</a>
+          <div id="mobile-menu" class="hidden md:flex md:items-center md:space-x-8 flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent z-50 border-b md:border-0">
+            <a href="#about" class="block md:inline text-gray-600 hover:text-blue-600 font-medium transition-colors px-4 py-2 md:px-0 md:py-0">About</a>
+            <a href="#skills" class="block md:inline text-gray-600 hover:text-blue-600 font-medium transition-colors px-4 py-2 md:px-0 md:py-0">Skills</a>
+            <a href="#projects" class="block md:inline text-gray-600 hover:text-blue-600 font-medium transition-colors px-4 py-2 md:px-0 md:py-0">Projects</a>
+            <a href="#resume" class="block md:inline text-gray-600 hover:text-blue-600 font-medium transition-colors px-4 py-2 md:px-0 md:py-0">Resume</a>
+            <a href="#contact" class="block md:inline bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all mt-2 md:mt-0">Contact</a>
           </div>
         </div>
       </div>
@@ -41,21 +41,21 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="gradient-bg text-white py-20 relative overflow-hidden">
+  <section class="gradient-bg text-white py-16 sm:py-20 relative overflow-hidden">
     <div class="absolute inset-0 bg-black/10"></div>
-    <div class="relative max-w-4xl mx-auto px-4 text-center">
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
       <div class="mb-8">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Hi, I'm <span class="text-yellow-300">Aarush</span>
         </h1>
-        <p class="text-xl md:text-2xl mb-8 text-blue-100 font-light">
+        <p class="text-lg sm:text-xl md:text-2xl mb-8 text-blue-100 font-light">
           Full Stack Developer passionate about creating impactful web applications
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a href="#projects" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center">
+          <a href="#projects" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center justify-center">
             <i class="fas fa-rocket mr-2"></i>View My Work
           </a>
-          <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
+          <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
             <i class="fas fa-envelope mr-2"></i>Get In Touch
           </a>
         </div>
@@ -79,32 +79,32 @@
   </section>
 
   <!-- Main Content -->
-  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <main class="max-w-6xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-16">
     
     <!-- About Section -->
-    <section id="about" class="mb-20">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+    <section id="about" class="mb-16 sm:mb-20">
+      <div class="text-center mb-8 sm:mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">About Me</h2>
         <div class="section-divider"></div>
       </div>
-      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="bg-white rounded-2xl shadow-xl p-4 sm:p-8 md:p-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">Passionate Full Stack Developer</h3>
-            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Passionate Full Stack Developer</h3>
+            <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
               I'm a passionate full stack developer with a knack for building scalable web applications. 
               Proficient in modern web technologies and currently diving into GoLang and cloud platforms, 
               I love creating impactful systems that solve real-world problems.
             </p>
-            <div class="flex flex-wrap gap-4">
-              <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Python</span>
-              <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">JavaScript</span>
-              <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">React</span>
-              <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">Node.js</span>
+            <div class="flex flex-wrap gap-2 sm:gap-4">
+              <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-xs sm:text-sm font-medium">Python</span>
+              <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-xs sm:text-sm font-medium">JavaScript</span>
+              <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-xs sm:text-sm font-medium">React</span>
+              <span class="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-xs sm:text-sm font-medium">Node.js</span>
             </div>
           </div>
-          <div class="text-center">
-            <div class="w-64 h-64 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-white">
+          <div class="text-center mt-8 md:mt-0">
+            <div class="w-40 h-40 sm:w-64 sm:h-64 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-white">
               <img src="psp_imresizer.jpg" alt="Aarush Tyagi" class="object-cover w-full h-full" />
             </div>
           </div>
@@ -113,50 +113,50 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="mb-20">
-      <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Skills & Expertise</h2>
+    <section id="skills" class="mb-16 sm:mb-20">
+      <div class="text-center mb-8 sm:mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">Skills & Expertise</h2>
         <div class="section-divider"></div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="skill-card text-white p-6 rounded-2xl card-hover">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="skill-card text-white p-4 sm:p-6 rounded-2xl card-hover">
           <div class="text-center">
-            <i class="fas fa-code text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-3">Programming</h3>
-            <ul class="text-sm space-y-1">
+            <i class="fas fa-code text-3xl sm:text-4xl mb-4"></i>
+            <h3 class="text-lg sm:text-xl font-bold mb-3">Programming</h3>
+            <ul class="text-xs sm:text-sm space-y-1">
               <li>Python</li>
               <li>JavaScript</li>
               <li>C++</li>
             </ul>
           </div>
         </div>
-        <div class="skill-card text-white p-6 rounded-2xl card-hover">
+        <div class="skill-card text-white p-4 sm:p-6 rounded-2xl card-hover">
           <div class="text-center">
-            <i class="fas fa-globe text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-3">Web Development</h3>
-            <ul class="text-sm space-y-1">
+            <i class="fas fa-globe text-3xl sm:text-4xl mb-4"></i>
+            <h3 class="text-lg sm:text-xl font-bold mb-3">Web Development</h3>
+            <ul class="text-xs sm:text-sm space-y-1">
               <li>HTML & CSS</li>
               <li>React</li>
               <li>Node.js</li>
             </ul>
           </div>
         </div>
-        <div class="skill-card text-white p-6 rounded-2xl card-hover">
+        <div class="skill-card text-white p-4 sm:p-6 rounded-2xl card-hover">
           <div class="text-center">
-            <i class="fas fa-tools text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-3">Tools</h3>
-            <ul class="text-sm space-y-1">
+            <i class="fas fa-tools text-3xl sm:text-4xl mb-4"></i>
+            <h3 class="text-lg sm:text-xl font-bold mb-3">Tools</h3>
+            <ul class="text-xs sm:text-sm space-y-1">
               <li>Git</li>
               <li>Docker</li>
               <li>VS Code</li>
             </ul>
           </div>
         </div>
-        <div class="skill-card text-white p-6 rounded-2xl card-hover">
+        <div class="skill-card text-white p-4 sm:p-6 rounded-2xl card-hover">
           <div class="text-center">
-            <i class="fas fa-database text-4xl mb-4"></i>
-            <h3 class="text-xl font-bold mb-3">Database</h3>
-            <ul class="text-sm space-y-1">
+            <i class="fas fa-database text-3xl sm:text-4xl mb-4"></i>
+            <h3 class="text-lg sm:text-xl font-bold mb-3">Database</h3>
+            <ul class="text-xs sm:text-sm space-y-1">
               <li>MongoDB</li>
               <li>SQL</li>
               <li>PostgreSQL</li>
@@ -370,7 +370,7 @@
         
         <div class="bg-white rounded-2xl shadow-xl p-8">
           <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Message</h3>
-         <form action="https://formspree.io/f/mpwrvvgd" method="POST" class="space-y-4">
+          <form action="https://formspree.io/f/mpwrvvgd" method="POST" class="space-y-4">
             <div>
               <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
               <input type="text" id="name" name="name" required 
